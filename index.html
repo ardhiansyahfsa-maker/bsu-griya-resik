@@ -55,6 +55,17 @@ tbody tr:last-child td{border-bottom:1px solid var(--line)}
 td.r,th.r{text-align:right;padding-right:0}
 .info p.k{margin:0;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:#B8CCBF;font-weight:600}
 .info p.v{margin:6px 0 0;font-size:18px}
+.pg{columns:3 300px;column-gap:20px}
+.pc{background:#12291F;padding:22px 22px 10px;break-inside:avoid;margin:0 0 20px;display:inline-block;width:100%}
+.pt{font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;font-weight:700;font-size:26px;margin:0}
+.ps{margin:4px 0 0;font-size:14px;color:#B8CCBF}
+.pc table{margin-top:12px;font-size:17px}
+.pc td{padding:11px 0;vertical-align:top}
+.pc td.r{white-space:nowrap;padding-left:12px}
+.pc tbody tr:last-child td{border-bottom:none}
+.pi{display:block;font-weight:600}
+.pn{display:block;font-size:14px;color:#B8CCBF}
+.pu{color:#B8CCBF;font-size:14px;margin-left:2px}
 </style>
 </head>
 <body>
@@ -196,25 +207,128 @@ FOTO LATAR: warga menimbang setoran sampah (foto asli BSU)
 </section>
 
 <section id="harga" style="background:var(--ink);color:#fff">
-<div class="wrap row sec" style="gap:56px">
-<div style="flex:1 1 340px;min-width:0">
+<div class="wrap sec">
+<div class="row" style="gap:32px;align-items:flex-end;justify-content:space-between;margin-bottom:40px">
+<div style="flex:1 1 520px;min-width:0">
 <p class="eyebrow" style="color:var(--leaf)">Daftar harga</p>
 <h2 class="cond h2">Berapa nilai sampahmu?</h2>
-<p style="margin:24px 0 0;font-size:18px;color:var(--soft)">Yang ditabung adalah sampah anorganik. Harga mengikuti mitra pengepul/BSI dan bisa berubah. Diperbarui terakhir: [TANGGAL].</p>
-<a href="#gabung" class="btn btn-leaf" style="margin-top:28px">Tanya jenis sampah lain</a>
+<p style="margin:20px 0 0;font-size:18px;color:var(--soft);max-width:640px">Mengacu pada daftar harga Bank Sampah Induk Abang Recycle, periode Desember 2025. Harga per kilo kecuali yang bertanda /biji.</p>
 </div>
-<div style="flex:2 1 520px;min-width:0;overflow-x:auto">
-<table>
-<thead><tr><th scope="col">Jenis sampah</th><th scope="col">Contoh</th><th scope="col" class="r">Harga / kg</th></tr></thead>
-<tbody>
-<tr><td style="font-weight:600">Botol plastik</td><td style="color:#C9DACF">Botol air mineral, botol minuman</td><td class="r" style="font-weight:700">Rp [HARGA]</td></tr>
-<tr><td style="font-weight:600">Gelas plastik</td><td style="color:#C9DACF">Gelas air mineral</td><td class="r" style="font-weight:700">Rp [HARGA]</td></tr>
-<tr><td style="font-weight:600">Kardus</td><td style="color:#C9DACF">Kotak kemasan, karton</td><td class="r" style="font-weight:700">Rp [HARGA]</td></tr>
-<tr><td style="font-weight:600">Kertas</td><td style="color:#C9DACF">HVS, buku, koran</td><td class="r" style="font-weight:700">Rp [HARGA]</td></tr>
-<tr><td style="font-weight:600">Kaleng aluminium</td><td style="color:#C9DACF">Kaleng minuman</td><td class="r" style="font-weight:700">Rp [HARGA]</td></tr>
-<tr><td style="font-weight:600">Besi &amp; logam</td><td style="color:#C9DACF">Besi bekas, seng</td><td class="r" style="font-weight:700">Rp [HARGA]</td></tr>
-</tbody>
-</table>
+<div role="note" style="flex:0 1 420px;min-width:0;border:2px solid var(--leaf);padding:18px 20px;display:flex;gap:14px;align-items:flex-start">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#9BD84A" stroke-width="2" stroke-linecap="round" aria-hidden="true" style="flex:none;margin-top:2px"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v5"></path><path d="M12 16.5v.01"></path></svg>
+<p style="margin:0;font-size:17px;font-weight:600">Harga dapat berubah sewaktu-waktu dalam situasi / kondisi tertentu.</p>
+</div>
+</div>
+<h3 class="cond" style="font-size:36px;color:var(--leaf);margin:0 0 18px">Plastik</h3>
+<div class="pg">
+<div class="pc">
+<h3 class="pt">PET</h3><p class="ps">Kode plastik 1 · umumnya botol minuman</p>
+<table><tbody>
+<tr><td><span class="pi">PET campur</span></td><td class="r"><b>Rp 2.500</b><span class="pu">/kg</span></td></tr>
+<tr><td><span class="pi">PET bening</span></td><td class="r"><b>Rp 4.000</b><span class="pu">/kg</span></td></tr>
+<tr><td><span class="pi">PET biru muda</span></td><td class="r"><b>Rp 3.000</b><span class="pu">/kg</span></td></tr>
+<tr><td><span class="pi">PET warna</span></td><td class="r"><b>Rp 2.500</b><span class="pu">/kg</span></td></tr>
+<tr><td><span class="pi">PET keras</span></td><td class="r"><b>Rp 1.000</b><span class="pu">/kg</span></td></tr>
+<tr><td><span class="pi">Galon Le Minerale</span></td><td class="r"><b>Rp 1.000</b><span class="pu">/biji</span></td></tr>
+</tbody></table>
+</div>
+<div class="pc">
+<h3 class="pt">Gelasan</h3><p class="ps">Kode plastik 5</p>
+<table><tbody>
+<tr><td><span class="pi">Ale-ale / sablon</span><span class="pn">Bekas es teh, ada sablon di pinggir</span></td><td class="r"><b>Rp 1.800</b><span class="pu">/kg</span></td></tr>
+<tr><td><span class="pi">Gelas kotor</span><span class="pn">Contoh: Alqodiri, Aqua gelas, dll.</span></td><td class="r"><b>Rp 1.800</b><span class="pu">/kg</span></td></tr>
+<tr><td><span class="pi">Gelas bersih</span><span class="pn">Bersih, tidak ada sablon</span></td><td class="r"><b>Rp 4.000</b><span class="pu">/kg</span></td></tr>
+</tbody></table>
+</div>
+<div class="pc">
+<h3 class="pt">Bak / Ember / PP</h3><p class="ps">Kode plastik 5 · bak, timba, bekas Tupperware, plastik tanpa tutup</p>
+<table><tbody>
+<tr><td><span class="pi">Campur</span></td><td class="r"><b>Rp 2.000</b><span class="pu">/kg</span></td></tr>
+<tr><td><span class="pi">Pilah warna</span></td><td class="r"><b>Rp 2.400</b><span class="pu">/kg</span></td></tr>
+<tr><td><span class="pi">Warna hitam</span></td><td class="r"><b>Rp 1.500</b><span class="pu">/kg</span></td></tr>
+</tbody></table>
+</div>
+<div class="pc">
+<h3 class="pt">Blowing / HDPE</h3><p class="ps">Kode plastik 2 · bekas sampo, deterjen, botol pembersih</p>
+<table><tbody>
+<tr><td><span class="pi">Campur</span></td><td class="r"><b>Rp 2.500</b><span class="pu">/kg</span></td></tr>
+<tr><td><span class="pi">Pilah warna</span></td><td class="r"><b>Rp 3.000</b><span class="pu">/kg</span></td></tr>
+</tbody></table>
+</div>
+<div class="pc">
+<h3 class="pt">Kresek / PE</h3><p class="ps">Kode plastik 4 · kresek bekas wadah kemasan</p>
+<table><tbody>
+<tr><td><span class="pi">Sablon</span></td><td class="r"><b>Rp 600</b><span class="pu">/kg</span></td></tr>
+<tr><td><span class="pi">Warna</span></td><td class="r"><b>Rp 600</b><span class="pu">/kg</span></td></tr>
+<tr><td><span class="pi">Bening</span></td><td class="r"><b>Rp 1.000</b><span class="pu">/kg</span></td></tr>
+</tbody></table>
+</div>
+<div class="pc">
+<h3 class="pt">Kerasan</h3><p class="ps">Mainan anak, mika, dll.</p>
+<table><tbody>
+<tr><td><span class="pi">Plastik keras</span></td><td class="r"><b>Rp 1.000</b><span class="pu">/kg</span></td></tr>
+</tbody></table>
+</div>
+</div>
+<h3 class="cond" style="font-size:36px;color:var(--leaf);margin:48px 0 18px">Kertas, logam, elektronik &amp; lainnya</h3>
+<div class="pg">
+<div class="pc">
+<h3 class="pt">Kertas</h3>
+<table><tbody>
+<tr><td><span class="pi">Kardus</span></td><td class="r"><b>Rp 1.500</b><span class="pu">/kg</span></td></tr>
+<tr><td><span class="pi">Buku</span></td><td class="r"><b>Rp 1.200</b><span class="pu">/kg</span></td></tr>
+<tr><td><span class="pi">HVS</span><span class="pn">Putih, tanpa sampul/map</span></td><td class="r"><b>Rp 1.700</b><span class="pu">/kg</span></td></tr>
+<tr><td><span class="pi">Duplex</span></td><td class="r"><b>Rp 600</b><span class="pu">/kg</span></td></tr>
+<tr><td><span class="pi">Koran / buram</span></td><td class="r"><b>Rp 1.200</b><span class="pu">/kg</span></td></tr>
+<tr><td><span class="pi">Sak semen</span></td><td class="r"><b>Rp 3.200</b><span class="pu">/kg</span></td></tr>
+</tbody></table>
+</div>
+<div class="pc">
+<h3 class="pt">Logam</h3>
+<table><tbody>
+<tr><td><span class="pi">Besi / galvalum</span></td><td class="r"><b>Rp 3.500</b><span class="pu">/kg</span></td></tr>
+<tr><td><span class="pi">Seng / kawat / paku</span></td><td class="r"><b>Rp 1.000</b><span class="pu">/kg</span></td></tr>
+<tr><td><span class="pi">Kaleng</span></td><td class="r"><b>Rp 1.300</b><span class="pu">/kg</span></td></tr>
+<tr><td><span class="pi">Aluminium</span></td><td class="r"><b>Rp 11.000</b><span class="pu">/kg</span></td></tr>
+<tr><td><span class="pi">Kuningan</span></td><td class="r"><b>Rp 45.000</b><span class="pu">/kg</span></td></tr>
+<tr><td><span class="pi">Tembaga</span></td><td class="r"><b>Rp 80.000</b><span class="pu">/kg</span></td></tr>
+<tr><td><span class="pi">Aki</span></td><td class="r"><b>Rp 12.000</b><span class="pu">/biji</span></td></tr>
+</tbody></table>
+</div>
+<div class="pc">
+<h3 class="pt">Elektronik</h3>
+<table><tbody>
+<tr><td><span class="pi">TV LED / monitor</span><span class="pn">Tergantung ukuran</span></td><td class="r"><b>Rp 5.000–30.000</b><span class="pu">/biji</span></td></tr>
+<tr><td><span class="pi">TV tabung</span><span class="pn">Tergantung ukuran</span></td><td class="r"><b>Rp 10.000–20.000</b><span class="pu">/biji</span></td></tr>
+<tr><td><span class="pi">Mesin cuci</span></td><td class="r"><b>Rp 70.000</b><span class="pu">/biji</span></td></tr>
+<tr><td><span class="pi">Kulkas / freezer</span></td><td class="r"><b>Rp 75.000</b><span class="pu">/biji</span></td></tr>
+<tr><td><span class="pi">Laptop / CPU</span></td><td class="r"><b>Rp 30.000</b><span class="pu">/biji</span></td></tr>
+<tr><td><span class="pi">Printer</span></td><td class="r"><b>Rp 10.000</b><span class="pu">/biji</span></td></tr>
+<tr><td><span class="pi">AC</span></td><td class="r"><b>Rp 200.000</b><span class="pu">/biji</span></td></tr>
+<tr><td><span class="pi">HP mati total / kamera</span></td><td class="r"><b>Rp 5.000</b><span class="pu">/biji</span></td></tr>
+<tr><td><span class="pi">Proyektor</span></td><td class="r"><b>Rp 20.000</b><span class="pu">/biji</span></td></tr>
+<tr><td><span class="pi">VCD / kipas / setrika</span></td><td class="r"><b>Rp 3.500</b><span class="pu">/kg</span></td></tr>
+<tr><td><span class="pi">Blender</span></td><td class="r"><b>Rp 600</b><span class="pu">/kg</span></td></tr>
+</tbody></table>
+</div>
+<div class="pc">
+<h3 class="pt">Kaca</h3>
+<table><tbody>
+<tr><td><span class="pi">Kaca / beling</span></td><td class="r"><b>Rp 200</b><span class="pu">/kg</span></td></tr>
+<tr><td><span class="pi">Botol kecap</span></td><td class="r"><b>Rp 400</b><span class="pu">/kg</span></td></tr>
+</tbody></table>
+</div>
+<div class="pc">
+<h3 class="pt">Lain-lain</h3>
+<table><tbody>
+<tr><td><span class="pi">Minyak jelantah</span></td><td class="r"><b>Rp 5.000</b><span class="pu">/kg</span></td></tr>
+<tr><td><span class="pi">Kain perca</span></td><td class="r"><b>Rp 1.000</b><span class="pu">/kg</span></td></tr>
+</tbody></table>
+</div>
+</div>
+<div style="margin-top:40px;display:flex;flex-wrap:wrap;gap:16px;align-items:center">
+<a href="https://wa.me/6282333119143" target="_blank" rel="noopener" class="btn btn-leaf">Tanya jenis sampah lain</a>
+<p style="margin:0;font-size:15px;color:#B8CCBF">Harga dapat berubah sewaktu-waktu dalam situasi / kondisi tertentu.</p>
 </div>
 </div>
 </section>
